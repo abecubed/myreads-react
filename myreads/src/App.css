@@ -164,6 +164,155 @@ body,
   cursor: pointer;
 }
 
+.book-shelf-info-modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  background-image: url("./icons/info-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  margin: 20px;
+}
+
+.modal-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 5px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #2e7c31;
+  font-size: 1.5em;
+  padding-right: 40px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  font-size: 2.5em;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 1001;
+  user-select: none;
+  font-weight: bold;
+}
+
+.modal-close:hover {
+  color: #fff;
+  background: #ff4444;
+  border-color: #ff4444;
+  transform: scale(1.1);
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-book-info {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-book-cover {
+  flex-shrink: 0;
+}
+
+.modal-book-cover img {
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-book-details {
+  flex: 1;
+}
+
+.modal-book-details p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.modal-book-details strong {
+  color: #2e7c31;
+}
+
+.modal-description {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.modal-description p:last-child {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    margin: 10px;
+    max-width: calc(100vw - 20px);
+  }
+  
+  .modal-book-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .modal-book-cover img {
+    width: 100px;
+  }
+}
+
 /* book cover */
 
 .book-cover {
