@@ -2,6 +2,41 @@
 
 MyReads is a personal book tracking application built with React that allows you to organize your books into different reading categories and search for new books to add to your collection.
 
+## 📑 Table of Contents
+
+- [MyReads - A React Book Tracking Application](#myreads---a-react-book-tracking-application)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [🚀 Features](#-features)
+    - [📚 Book Management](#-book-management)
+    - [🔍 Book Search](#-book-search)
+    - [📖 Detailed Book Information](#-detailed-book-information)
+    - [🎨 Modern UI/UX](#-modern-uiux)
+  - [🛠️ Technology Stack](#️-technology-stack)
+    - [Frontend](#frontend)
+    - [Development Tools](#development-tools)
+    - [Backend API](#backend-api)
+  - [📁 Project Structure](#-project-structure)
+  - [🚀 Getting Started](#-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [🎯 How to Use](#-how-to-use)
+    - [Managing Your Books](#managing-your-books)
+    - [Adding New Books](#adding-new-books)
+    - [Book Information Modal](#book-information-modal)
+  - [🔧 Configuration](#-configuration)
+    - [Development Server](#development-server)
+    - [Build Configuration](#build-configuration)
+  - [🌐 API Integration](#-api-integration)
+    - [Available Endpoints](#available-endpoints)
+    - [Authentication](#authentication)
+  - [📱 Responsive Design](#-responsive-design)
+    - [Desktop (600px+)](#desktop-600px)
+    - [Mobile (\<600px)](#mobile-600px)
+  - [🔮 Future Enhancements](#-future-enhancements)
+    - [Planned Features](#planned-features)
+    - [Technical Improvements](#technical-improvements)
+  - [🤝 Contributing](#-contributing)
+
 ## 🚀 Features
 
 ### 📚 Book Management
@@ -98,13 +133,6 @@ src/
 
 4. **Open your browser**
    Navigate to `http://localhost:3001` to view the application
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint code analysis
 
 ## 🎯 How to Use
 
