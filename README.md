@@ -20,15 +20,15 @@ MyReads is a personal book tracking application built with React that allows you
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
   - [🎯 How to Use](#-how-to-use)
-    - [Managing Your Books](#managing-your-books)
-    - [Adding New Books](#adding-new-books)
-    - [Book Information Modal](#book-information-modal)
+    - [📚 Managing Your Books](#-managing-your-books)
+    - [📗 Adding New Books](#-adding-new-books)
+    - [📖 Book Information Modal](#-book-information-modal)
   - [🔧 Configuration](#-configuration)
-    - [Development Server](#development-server)
-    - [Build Configuration](#build-configuration)
+    - [🖥️ Development Server](#️-development-server)
+    - [🏗️ Build Configuration](#️-build-configuration)
   - [🌐 API Integration](#-api-integration)
-    - [Available Endpoints](#available-endpoints)
-    - [Authentication](#authentication)
+    - [🟢 Available Endpoints](#-available-endpoints)
+    - [🔒 Authentication](#-authentication)
   - [📱 Responsive Design](#-responsive-design)
     - [Desktop (600px+)](#desktop-600px)
     - [Mobile (\<600px)](#mobile-600px)
@@ -101,6 +101,11 @@ src/
 ├── App.css                 # Application styles
 ├── index.css               # Global styles
 └── main.js                 # Application entry point
+playwright/
+├── playwright-report/      # Failed reports for playwright end-to-end tests
+├── tests/                  # End-to-end tests
+├── package.json            # Playwright-specific package folder
+└── playwright.config       # Playwright-specific configuration options
 ```
 
 ## 🚀 Getting Started
@@ -116,7 +121,6 @@ src/
 
    ```bash
    git clone <repository-url>
-   cd myreads-react/myreads
    ```
 
 2. **Install dependencies**
@@ -128,7 +132,7 @@ src/
 3. **Start the development server**
 
    ```bash
-   npm run dev
+   npm run start
    ```
 
 4. **Open your browser**
@@ -136,20 +140,20 @@ src/
 
 ## 🎯 How to Use
 
-### Managing Your Books
+### 📚 Managing Your Books
 
 1. **View Your Library**: The main page displays your books in three categories
 2. **Move Books**: Click the dropdown arrow on any book to change its category
 3. **View Details**: Click the info button (ℹ️) to see detailed book information
 
-### Adding New Books
+### 📗 Adding New Books
 
 1. **Access Search**: Click the "Add a book" button (+ icon) at the bottom right
 2. **Search Books**: Type in the search box to find books by title, author, or ISBN
 3. **Add to Library**: Use the dropdown on search results to add books to your library
 4. **Return Home**: Click "Close" to return to your main library
 
-### Book Information Modal
+### 📖 Book Information Modal
 
 - **Open Modal**: Click the white info button in the top-right corner of any book
 - **View Details**: See comprehensive information including description, ratings, and metadata
@@ -157,7 +161,7 @@ src/
 
 ## 🔧 Configuration
 
-### Development Server
+### 🖥️ Development Server
 
 The project is configured to run on port 3001 with the following features:
 
@@ -165,7 +169,7 @@ The project is configured to run on port 3001 with the following features:
 - **Proxy Configuration**: Handles API requests and static assets
 - **CORS Support**: Configured for development environment
 
-### Build Configuration
+### 🏗️ Build Configuration
 
 - **Asset Optimization**: Automatic code splitting and minification
 - **Relative Paths**: Compatible with various hosting platforms
@@ -175,13 +179,13 @@ The project is configured to run on port 3001 with the following features:
 
 The application integrates with the Udacity Books API:
 
-### Available Endpoints
+### 🟢 Available Endpoints
 
 - `GET /books` - Retrieve user's book collection
 - `PUT /books/:id` - Update book shelf status
 - `POST /search` - Search for books in the database
 
-### Authentication
+### 🔒 Authentication
 
 - Uses localStorage token for user session management
 - Automatic token generation for new users
