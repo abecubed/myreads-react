@@ -2,9 +2,16 @@
 
 MyReads is a personal book tracking application built with React that allows you to organize your books into different reading categories and search for new books to add to your collection.
 
+## 🔮 Preview UI
+
+Landing page looks like this:
+
+[MyReads-example.png](./public/myReads.png)
+
 ## 📑 Table of Contents
 
 - [MyReads - A React Book Tracking Application](#myreads---a-react-book-tracking-application)
+  - [🔮 Preview UI](#-preview-ui)
   - [📑 Table of Contents](#-table-of-contents)
   - [🚀 Features](#-features)
     - [📚 Book Management](#-book-management)
