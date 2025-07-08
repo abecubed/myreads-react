@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import BookModal from './BookModal';
+import { useState } from 'react';
+import BookInfoModal from './BookInfoModal';
 import '../App.css';
 
 const Book = ({ book, onStatusChange }) => {
@@ -42,7 +42,7 @@ const Book = ({ book, onStatusChange }) => {
       </div>
 
       {/* Modal */}
-      <BookModal 
+      <BookInfoModal 
         book={book} 
         isOpen={showModal} 
         onClose={closeModal} 

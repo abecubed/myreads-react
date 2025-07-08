@@ -1,7 +1,6 @@
-import React from 'react';
 import '../App.css';
 
-const BookModal = ({ book, isOpen, onClose }) => {
+const BookInfoModal = ({ book, isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const authors = book.authors?.join(', ') || 'Unknown Author';
@@ -65,4 +64,4 @@ const BookModal = ({ book, isOpen, onClose }) => {
   );
 };
 
-export default BookModal;
+export default BookInfoModal;
