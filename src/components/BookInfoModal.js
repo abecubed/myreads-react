@@ -5,15 +5,15 @@ const BookInfoModal = ({ book, isOpen, onClose }) => {
 
   const authors = book.authors?.join(', ') || 'Unknown Author';
 
-  const handleCloseClick = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
+  const handleCloseClick = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
     onClose();
   };
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <div className="modal-content" onClick={(event) => event.stopPropagation()}>
         <button 
           className="modal-close" 
           onClick={handleCloseClick}
