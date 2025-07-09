@@ -117,7 +117,7 @@ playwright/
 
 ### Prerequisites
 
-- Node.js (version 16 or higher)
+- Node.js (version 20.19.0 or higher)
 - npm or yarn package manager
 
 ### Installation
