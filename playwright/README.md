@@ -30,8 +30,7 @@ playwright/
 Navigate to the playwright/ directory and install the required packages:
     `cd playwright`
 
-2. Run Tests
-To execute all tests, ensure the application - localhost:3001 - is running:
+2. Ensure the application is running at localhost:3001:
 
     `cd ..`
 
