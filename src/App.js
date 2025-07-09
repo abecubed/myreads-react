@@ -28,7 +28,7 @@ function App() {
     <div className="app">
         <Routes>
           <Route path="/" element={<MainBookShelf books={books} onStatusChange={updateBookStatus} />} />
-          <Route path="/search" element={<BookSearch books={books} onStatusChange={updateBookStatus}/>} />
+          <Route exact path="/search" element={<BookSearch books={books} onStatusChange={updateBookStatus}/>} />
         </Routes>
     </div>
   );

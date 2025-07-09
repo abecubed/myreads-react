@@ -41,6 +41,7 @@ MyReads is a personal book tracking application built with React that allows you
     - [Planned Features](#planned-features)
     - [Technical Improvements](#technical-improvements)
   - [🤝 Contributing](#-contributing)
+  - [🔗 Credits](#-credits)
 
 ## 🚀 Features
 
@@ -223,3 +224,7 @@ The application integrates with the Udacity Books API:
 ## 🤝 Contributing
 
 This is a learning project, but suggestions and improvements are welcome! Please feel free to submit issues or pull requests.
+
+## 🔗 Credits
+
+Udacity Starter Code - this project is a fork from <https://github.com/udacity/nd0191-c1-myreads>
