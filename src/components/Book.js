@@ -28,7 +28,7 @@ const Book = ({ book, onStatusChange }) => {
               value={book.shelf || 'none'}
               onChange={(e) => onStatusChange(book, e.target.value)}
             >
-              <option value="none" disabled>Move to...</option>
+              <option value="" disabled>Move to...</option>
               <option value="currentlyReading">Currently Reading</option>
               <option value="wantToRead">Want to Read</option>
               <option value="read">Read</option>
